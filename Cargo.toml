@@ -1,0 +1,21 @@
+[package]
+name = "pdfsign"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# CLI
+clap = { version = "4.5", features = ["derive"] }
+
+# ECC
+p256 = { version = "0.13", features = ["ecdsa"] }
+rand_core = "0.6"
+
+# Hash
+sha2 = "0.10"
+
+# PDF
+lopdf = "0.32"
+
+# Error handling
+anyhow = "1.0"
